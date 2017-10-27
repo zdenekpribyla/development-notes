@@ -11,3 +11,10 @@ var uniqueProjectNames = projectName.filter(function (item, index, record) {
 });
 console.log(uniqueProjectNames);
 ```
+
+### Merge values from group of arrays `AllTags` to one array
+
+```javascript
+var allTagsMerge = [].concat.apply([], allTags);
+console.log(allTagsMerge);
+```
