@@ -18,3 +18,29 @@ console.log(uniqueProjectNames);
 var allTagsMerge = [].concat.apply([], allTags);
 console.log(allTagsMerge);
 ```
+
+
+### Display only array of `hours_spent` from `allData` 
+```javascript
+var allData = require('./file.json');
+var allHoursArray = allData.map(function (record) {
+    return record.hours_spent
+});
+console.log(allHoursArray);
+```
+
+### Sum values of `hours_spent` from `allHoursArray` by classic loop 
+
+```javascript
+var totalHours = 0;
+for (i = 0; i < allHoursArray.length; i++) {
+    totalHours += allHoursArray[i];
+}
+console.log(totalHours.toFixed(2));
+```
+
+### Sum values of `hours_spent` from `allHoursArray` by `loadash` functions
+```
+var totalHours = _.sum(allHoursArray);
+console.log(totalHours.toFixed(2));
+```
