@@ -13,7 +13,7 @@ console.log(uniqueProjectNames);
 ```
 
 ### Merge values from group of arrays `AllTags` to one array
-
+>source: https://stackoverflow.com/questions/5080028/what-is-the-most-efficient-way-to-concatenate-n-arrays-in-javascript
 ```javascript
 var allTagsMerge = [].concat.apply([], allTags);
 console.log(allTagsMerge);
@@ -40,7 +40,31 @@ console.log(totalHours.toFixed(2));
 ```
 
 ### Sum values of `hours_spent` from `allHoursArray` by `loadash` functions
-```
+```javascript
 var totalHours = _.sum(allHoursArray);
 console.log(totalHours.toFixed(2));
+```
+### API download data from url - .json
+```javascript
+var url = 'https://api.github.com/users/zdenekpribyla/repos';
+fetch(url)
+    .then((resp) => resp.json())
+.then(function(data) {
+    }
+}
+```
+### Create and add a new element - project
+>source:  // source: http://clubmate.fi/append-and-prepend-elements-with-pure-javascript/
+
+```javascript
+    jsonData.forEach(function (project) {
+ // Where to put the new element   
+     var parent = document.getElementById('result');
+ // Make a new div
+     var divChild = document.createElement("result__project");
+ // Give the new div some content
+     divChild.innerHTML = ('<h1>' + project.name + '</h1>');
+ // Chug in into the parent element
+     parent.appendChild(divChild);
+     });
 ```
