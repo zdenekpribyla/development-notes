@@ -53,7 +53,7 @@ fetch(url)
     }
 }
 ```
-### Create and add a new element - project
+### Create and add a new element into code (index.html)
 >source:  // source: http://clubmate.fi/append-and-prepend-elements-with-pure-javascript/
 
 ```javascript
