@@ -1,6 +1,6 @@
-# Development Notes
+# JavaScript Notes
 
-> Personal JavaScript codes
+> The most popular JavaScript codes
 
 
 ### Display only unique names of project
@@ -67,4 +67,20 @@ fetch(url)
  // Chug in into the parent element
      parent.appendChild(divChild);
      });
+```
+
+###If string contains defined text (eg. "http")
+```javascript
+if (url.indexOf("http") >= 0) {  //possible to use => url.include("http") === true
+}
+```
+
+###typeOf return true/false depends of project type
+```javascript
+typeof 3 === "number"
+true
+typeof "text" === "string"
+true
+typeof "text" === "object"
+false
 ```
