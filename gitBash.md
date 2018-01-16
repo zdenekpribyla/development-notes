@@ -1,6 +1,6 @@
-# git Bash Notes
+# GitBash Notes
 
-> My personal git Bash codes
+>  The most popular GitBash codes
 
 ####cd - change directory
 + cd . current directory
@@ -17,4 +17,7 @@
 #### mv text.txt pismo.txt - copy and create a new file
 #### mv text.txt pismo.txt - change file name to pismo.txt
 ####cat - opent files
+####git clone `type url` - clone project from `url`
+####--help - return help info
+
 

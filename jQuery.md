@@ -1,6 +1,6 @@
 # jQuery Notes
 
-> Personal jQuery codes
+> The most popular jQuery codes
 
 
 ### Document ready function
